@@ -1,0 +1,33 @@
+@media screen and (min-width: 320px) {
+    .section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        border-top: 2px solid #8BA426;
+        background-color: #7C8034;
+        .deck {
+            width: calc(100% - 10px);
+            margin: 50px auto;
+            .card {
+                width: 100%;
+                display: flex!important;
+                justify-content: center!important;
+                &:focus-visible {
+                    outline: none;
+                }
+                img {
+                    border-radius: 10px;
+                    box-shadow: 1px 5px 5px #000;
+                    border: 25px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}

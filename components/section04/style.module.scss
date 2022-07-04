@@ -1,0 +1,54 @@
+@media screen and (min-width: 320px) {
+    .section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        border-top: 2px solid #8BA426;
+        background-color: #7C8034;
+        .contato {
+            width: 100%;
+            margin: 50px 0 50px 0;
+            .sideLeft {
+                text-align: center;
+                padding: 10px;
+                color: #fff;
+            }
+            .sideRight {
+                width: 100%;
+                .deck {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .card {
+                        display: flex;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        width: 100%;
+        .contato {
+            display: flex;
+            .sideLeft {
+                width: 50%;
+                text-align: right;
+                padding: 150px 50px 50px 50px;
+            }
+            .sideRight {
+                width: 50%;
+                .deck {
+                    .card {
+                        margin: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

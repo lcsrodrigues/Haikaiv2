@@ -1,0 +1,110 @@
+@media screen and (min-width: 320px) {
+    .header {
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+        background-color: #AFA96E;
+        .logo {
+            width: 50%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            img {
+                width: 150px;
+                padding: 0 10px
+            }
+        }
+        .btnMenu {
+            width: 50%;
+            height: 70px;
+            background: #AFA96E;
+            background-image: url(../../public/menu-02.png);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 90%;
+            background-position-y: center;
+        }
+        .navigation {
+            display: none;
+        }
+        .menu {
+            position: absolute;
+            top: 90px;
+            width: 100%;
+            display: none;
+            background: #CEC780;
+            padding: 10px;
+            cursor: pointer;
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                li {
+                    margin: 10px 0;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        .logo {
+            width: 70%;
+            img {
+                width: 200px;
+                margin: 5px 0 0 0;
+                padding: 0 10px
+            }
+        }
+        .btnMenu {
+            display: none;
+        }
+        .navigation {
+            display: flex;
+            width: 30%;
+            height: 70px;
+            background: #AFA96E;
+            ul {
+                width: 100%;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li {
+                    padding: 0 0 2px 5px;
+                    margin: 10px 0;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-size: 10px;
+                    border-left: 2px solid #fff;
+                    color: #fff;
+                    &:hover {
+                        border-bottom: 2px solid #fff;
+                        transition-duration: 0.1s;
+                        transition-delay: 0.2s;
+                    }
+                }
+            }
+        }
+        .menu {
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navigation {
+        ul {
+            li {
+                font-size: 14px!important;
+            }
+        }
+    }
+}

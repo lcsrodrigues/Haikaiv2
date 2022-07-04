@@ -1,0 +1,36 @@
+@media screen and (min-width: 320px) {
+    .section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 50px 0;
+        min-height: calc(100vh - 90px);
+        background-color: #AFA96E;
+        .image {
+            width: 100%;
+            text-align: center;
+            img {
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        width: 100%;
+        .image {
+            margin: 0;
+            img {
+                &:nth-child(2) {
+                    display: inline-block;
+                    margin-bottom: 75px;
+                    margin-left: -80px;
+                }
+            }
+        }
+    }
+}
